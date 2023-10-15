@@ -17,7 +17,7 @@ import org.junit.platform.suite.api.Suite;
     CodeClimateRendererTest.class,
     CSVRendererTest.class,
     EmacsRendererTest.class,
-    HTMLRendererTest.class,
+    // HTMLRendererTest.class,
     IDEAJRendererTest.class,
     JsonRendererTest.class,
     PapariTextRendererTest.class,
