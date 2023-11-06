@@ -1,6 +1,9 @@
 # Notes about Compiling (if I run into problems)
-* Compile with `mvn install -DskipTests` 
+* Compile with `mvn install -DskipTests`        
 * https://github.com/gousiosg/java-callgraph
+* input for callgraph: java -jar javacg-0.1-SNAPSHOT-static.jar lib1.jar lib2.jar...
+* output for callgraph: M:class1:<method1>(arg_types) (typeofcall)class2:<method2>(arg_types)
+* more details in github page
 * zookeeper jar files: 
 commons-cli-1.5.0.jar
 commons-io-2.11.0.jar

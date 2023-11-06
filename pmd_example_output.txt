@@ -1,0 +1,5 @@
+./test_runs/Test.java:1:	NoPackage:	All classes, interfaces, enums and annotations must belong to a named package
+./test_runs/Test.java:1:	UseUtilityClass:	This utility class has a non-private constructor
+./test_runs/Test.java:5:	UnusedLocalVariable:	Avoid unused local variables such as 'x'.
+./test_runs/Test.java:9:	EmptyCatchBlock:	Avoid empty catch blocks
+./test_runs/Test.java:13:	UnnecessarySemicolon:	Unnecessary semicolon
