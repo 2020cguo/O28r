@@ -1175,7 +1175,6 @@
         <module>pmd-apex</module>
         <module>pmd-coco</module>
         <module>pmd-core</module>
-        <module>pmd-cs</module>
         <module>pmd-dart</module>
         <module>pmd-doc</module>
         <module>pmd-groovy</module>
@@ -1186,7 +1185,6 @@
         <module>pmd-lang-test</module>
         <module>pmd-modelica</module>
         <module>pmd-objectivec</module>
-        <module>pmd-swift</module>
         <module>pmd-test</module>
         <module>pmd-test-schema</module>
         <module>pmd-tsql</module>
