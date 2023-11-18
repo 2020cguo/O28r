@@ -4,23 +4,30 @@ def buildGraph(input_file):
     with open(input_file) as f:
         data=f.readlines()
 
+    all_methods = set()
     depGraph = {}
+
     for line in data:
         if line[0] == "C":
             continue
         pair = line.split()
         dep = pair[1][3:].strip()
         callsIt = pair[0][2:].strip()
+        # add dep and callsIt to the set of all methods if not already in there
+        if dep not in all_methods:
+            all_methods.add(dep)
+        if callsIt not in all_methods:
+            all_methods.add(callsIt)
         # key: dependency, value: list of methods that call it
         if dep in depGraph.keys():
             depGraph[dep].append(callsIt)
         else:
             depGraph[dep] = [callsIt]
 
-    return depGraph
+    return depGraph, all_methods
 
 ### outputting propagation paths ###
-def methodTrace(input_file, depGraph):
+def methodTrace(input_file, depGraph, all_methods):
     # input_file = list of methods to trace (javaparser stuff)
     with open(input_file) as f:
         data=f.readlines()
@@ -35,9 +42,41 @@ def methodTrace(input_file, depGraph):
         errors.append(line.strip())
 
     for err in errors:
-        print("REVERSE PROPAGATION PATH FOR", err, end="")
-        BFS(err, depGraph)
+        visited = {}
+        for method in all_methods:
+            visited[method] = False
+        vertex_list = [0]*100
+        vertex_count = 0
+        print("REVERSE PROPAGATION PATH FOR", err)
+        findPaths(err, depGraph, vertex_list, vertex_count, visited)
         print("")
+
+
+
+def findPaths(start, depGraph, vertex_list, vertex_count, visited):
+    vertex_count += 1
+    vertex_list[vertex_count] = start
+    visited[start] = True
+    if start not in depGraph.keys():
+        printList(vertex_list)
+        return
+    next_v = depGraph[start]
+    flag = 0
+
+    for v in next_v:
+        if not visited[v]:
+            flag = 1
+            findPaths(v, depGraph, vertex_list, vertex_count, visited)
+    if flag == 0:
+        printList(vertex_list)
+    visited[start] = False
+    vertex_count -= 1
+
+def printList(vertex_list):
+    for v in vertex_list:
+        if v != 0:
+            print(v, end = "->")
+    print()
 
 
 # # A function used by DFS
@@ -109,10 +148,10 @@ def BFS(s, depGraph):
 
 # thank you candace <3
 def main():
-    depGraph = buildGraph("graph_constructor_test.txt")
+    depGraph, all_methods = buildGraph("graph_constructor_test.txt")
     print("DEPENDENCY GRAPH:", depGraph, "\n")
 
-    methodTrace("graph_constructor_err_methods.txt", depGraph)
+    methodTrace("graph_constructor_err_methods.txt", depGraph, all_methods)
 
 if __name__ == "__main__":
     main()
