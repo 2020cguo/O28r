@@ -167,11 +167,11 @@ def BFS(s, depGraph):
 
 
 # thank you candace <3
-def main():
-    depGraph, all_methods = buildGraph("graph_constructor_test.txt")
+def main(dependencies, error_methods):
+    depGraph, all_methods = buildGraph(dependencies)
     print("DEPENDENCY GRAPH:", depGraph, "\n")
 
-    methodTrace("graph_constructor_err_methods.txt", depGraph, all_methods)
+    methodTrace(error_methods, depGraph, all_methods)
 
 if __name__ == "__main__":
     main()

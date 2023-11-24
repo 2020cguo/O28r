@@ -1,3 +1,4 @@
+#TODO: account for no empty try catches
 def parse(input_file, output_file):
     output_lines = []
     with open(input_file) as f:
