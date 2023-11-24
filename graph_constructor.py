@@ -1,3 +1,6 @@
+# globals
+PATH_LENGTH = []
+
 ### builds dependency graph ###
 def buildGraph(input_file):
     # input_file = entire dependencies output by java callgraph
@@ -40,8 +43,9 @@ def methodTrace(input_file, depGraph, all_methods):
         # errClass = pair[0]
         # errMethod = pair[1]
         errors.append(line.strip())
-
+    crit_scores = []
     for err in errors:
+        global PATH_LENGTH
         visited = {}
         for method in all_methods:
             visited[method] = False
@@ -49,13 +53,20 @@ def methodTrace(input_file, depGraph, all_methods):
         vertex_count = 0
         print("REVERSE PROPAGATION PATH FOR", err)
         findPaths(err, depGraph, vertex_list, vertex_count, visited)
-        print("")
+        print("Number of paths:", len(PATH_LENGTH))
+        print("Longest path:", max(PATH_LENGTH))
+        crit_scores.append(sum(PATH_LENGTH))
+        PATH_LENGTH = []
+        print()
+    norm_crit = [round(float(i)*100/max(crit_scores)) for i in crit_scores]
+    print(norm_crit)
 
 
 
 def findPaths(start, depGraph, vertex_list, vertex_count, visited):
     vertex_count += 1
     vertex_list[vertex_count] = start
+    # vertex_list.append(start)
     visited[start] = True
     if start not in depGraph.keys():
         printList(vertex_list)
@@ -70,13 +81,22 @@ def findPaths(start, depGraph, vertex_list, vertex_count, visited):
     if flag == 0:
         printList(vertex_list)
     visited[start] = False
+    vertex_list.pop()
     vertex_count -= 1
 
+
 def printList(vertex_list):
-    for v in vertex_list:
-        if v != 0:
-            print(v, end = "->")
-    print()
+    global PATH_LENGTH
+    output_str = ""
+    actual_list = []
+    for x in vertex_list:
+        if(x != 0):
+            actual_list.append(x)
+    PATH_LENGTH.append(len(actual_list))
+    print("->".join(actual_list))
+    # if len(vertex_list) > 0:
+    #     print("->".join([str(x) for x in vertex_list if x != 0]))
+    #     PATH_LENGTH.append()
 
 
 # # A function used by DFS
