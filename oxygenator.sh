@@ -9,7 +9,7 @@ python3 -c "import pmd_parser; pmd_parser.parse('${OUTPUT_DIR}/pmd_output.txt', 
 cd ../javaparser-maven
 export PATH=$PATH:apache-maven-3.9.5/bin
 mvn clean install
-java -jar target/javaparser-maven-sample-1.0-SNAPSHOT-shaded.jar "../O28r/${FILE_DIR}/${SOURCE_FILE}" "../O28r/${OUTPUT_DIR}/parser_output.txt" > ../O28r/${OUTPUT_DIR}/error_methods.txt
+java -jar target/javaparser-maven-sample-1.0-SNAPSHOT-shaded.jar "../O28r/${FILE_DIR}/${SOURCE_FILE}" "../O28r/${OUTPUT_DIR}/parser_output" > ../O28r/${OUTPUT_DIR}/error_methods.txt
 # call java callgraph
 cd ../O28r/java-callgraph
 export PATH=$PATH:../apache-maven-3.9.5/bin
