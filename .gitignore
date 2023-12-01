@@ -1,5 +1,6 @@
 target/
 bin/
+output_files/
 .project
 .classpath
 .checkstyle
@@ -15,6 +16,7 @@ pmd-core/dependency-reduced-pom.xml
 .bundle
 vendor
 .DS_Store
+*.jar
 
 # node modules for https://allcontributors.org/docs/en/cli/installation
 node_modules
