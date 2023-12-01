@@ -19,8 +19,7 @@ def parse(input_file, output_dir):
     
     for k in file_map.keys():
         if len(file_map[k]) >= 1:
-            file_name = k.split('.')[0]     # gets rid of the .java
-            file_name = file_name.replace("/", "%")
-            with open(output_dir + "/" + file_name + ".txt", 'w') as f:
+            file_name = k.replace("/", "%") + "%Output.txt"
+            with open(output_dir + "/" + file_name, 'w') as f:
                 for line in file_map[k]:
                     f.write(line+"\n")
