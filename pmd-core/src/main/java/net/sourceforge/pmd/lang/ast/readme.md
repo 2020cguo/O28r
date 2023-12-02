@@ -1,4 +1,0 @@
-# AST
-
-Abstract Syntax Tree
-

@@ -14,8 +14,8 @@ def buildGraph(input_file):
         if line[0] == "C":
             continue
         pair = line.split()
-        dep = pair[1][3:].strip()
-        callsIt = pair[0][2:].strip()
+        dep = pair[1][3:].strip().split("(")[0].split(".")[-1]
+        callsIt = pair[0][2:].strip().split("(")[0].split(".")[-1]
         # add dep and callsIt to the set of all methods if not already in there
         if dep not in all_methods:
             all_methods.add(dep)
@@ -44,12 +44,17 @@ def methodTrace(input_file, depGraph, all_methods):
         # errMethod = pair[1]
         errors.append(line.strip())
     crit_scores = []
+    traced_errors = set()
     for err in errors:
+        if err in traced_errors:
+            continue
+        else:
+            traced_errors.add(err)
         global PATH_LENGTH
         visited = {}
         for method in all_methods:
             visited[method] = False
-        vertex_list = [0]*100
+        vertex_list = [0]*len(all_methods)
         vertex_count = 0
         print("REVERSE PROPAGATION PATH FOR", err)
         findPaths(err, depGraph, vertex_list, vertex_count, visited)
@@ -98,36 +103,6 @@ def printList(vertex_list):
     #     print("->".join([str(x) for x in vertex_list if x != 0]))
     #     PATH_LENGTH.append()
 
-
-# # A function used by DFS
-# def DFSUtil(v, visited, depGraph):
-
-#     # Mark the current node as visited
-#     # and print it
-#     visited.add(v)
-#     print(v, end=' ')
-
-#     # Recur for all the vertices
-#     # adjacent to this vertex
-#     if v not in depGraph.keys():
-#         return
-#     for neighbour in depGraph[v]:
-#         if neighbour not in visited:
-#             DFSUtil(neighbour, visited, depGraph)
-
-    
-# # The function to do DFS traversal. It uses
-# # recursive DFSUtil()
-# def DFS(v, depGraph):
-
-#     # Create a set to store visited vertices
-#     visited = set()
-
-#     # Call the recursive helper function
-#     # to print DFS traversal
-#     DFSUtil(v, visited, depGraph)
-
-
 ### Function to print a BFS of graph ###
 def BFS(s, depGraph):
 
@@ -169,7 +144,7 @@ def BFS(s, depGraph):
 # thank you candace <3
 def main(dependencies, error_methods):
     depGraph, all_methods = buildGraph(dependencies)
-    print("DEPENDENCY GRAPH:", depGraph, "\n")
+    # print("DEPENDENCY GRAPH:", depGraph, "\n")
 
     methodTrace(error_methods, depGraph, all_methods)
 

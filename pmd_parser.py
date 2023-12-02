@@ -19,7 +19,8 @@ def parse(input_file, output_dir):
     
     for k in file_map.keys():
         if len(file_map[k]) >= 1:
-            file_name = k.replace("/", "%") + "%Output.txt"
+            file_name_arr = k.split("/")[1:]
+            file_name = "%".join(file_name_arr) + "&Output.txt"
             with open(output_dir + "/" + file_name, 'w') as f:
                 for line in file_map[k]:
                     f.write(line+"\n")
