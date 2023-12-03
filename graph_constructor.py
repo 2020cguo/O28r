@@ -1,9 +1,17 @@
-# globals
+### GLOBALS ###
 PATH_LENGTH = []
 
-### builds dependency graph ###
+### METHODS ###
 def buildGraph(input_file):
-    # input_file = entire dependencies output by java callgraph
+    """
+    Reads in txt file containing Java CallGraph output
+    and builds a graph out of method dependencies.
+
+	:param input_file: (String) txt filename, contains Java CallGraph output
+    :returns: 
+        - (Dict of String: List) dependency graph with callee -> callers relationships
+        - (Set) all methods identified by Java CallGraph
+	"""
     with open(input_file) as f:
         data=f.readlines()
 
@@ -15,33 +23,33 @@ def buildGraph(input_file):
             continue
         pair = line.split()
         dep = pair[1][3:].strip().split("(")[0].split(".")[-1]
-        callsIt = pair[0][2:].strip().split("(")[0].split(".")[-1]
-        # add dep and callsIt to the set of all methods if not already in there
+        caller = pair[0][2:].strip().split("(")[0].split(".")[-1]
         if dep not in all_methods:
             all_methods.add(dep)
-        if callsIt not in all_methods:
-            all_methods.add(callsIt)
-        # key: dependency, value: list of methods that call it
+        if caller not in all_methods:
+            all_methods.add(caller)
         if dep in depGraph.keys():
-            depGraph[dep].append(callsIt)
+            depGraph[dep].append(caller)
         else:
-            depGraph[dep] = [callsIt]
+            depGraph[dep] = [caller]
 
     return depGraph, all_methods
 
-### outputting propagation paths ###
+
 def methodTrace(input_file, depGraph, all_methods):
-    # input_file = list of methods to trace (javaparser stuff)
+    """
+    Traces dependency paths and outputs number of paths,
+    longest path, and criticality score.
+
+	:param input_file: (String) txt filename, contains JavaParser output
+    :param depGraph: (Dict of String: List) dependency graph with callee -> callers relationships
+    :param all_methods: (Set) all methods identified by Java CallGraph
+	"""    
     with open(input_file) as f:
         data=f.readlines()
     
     errors = []
-    # line = errClass.errMethod
     for line in data:
-        # TODO: remove if no parsing required
-        # pair = line.split()
-        # errClass = pair[0]
-        # errMethod = pair[1]
         errors.append(line.strip())
     crit_scores = []
     traced_errors = set()
@@ -63,15 +71,23 @@ def methodTrace(input_file, depGraph, all_methods):
         crit_scores.append(sum(PATH_LENGTH))
         PATH_LENGTH = []
         print()
-    norm_crit = [round(float(i)*100/max(crit_scores)) for i in crit_scores]
+    norm_crit = [i*100/max(crit_scores) for i in crit_scores]
     print(norm_crit)
 
 
-
 def findPaths(start, depGraph, vertex_list, vertex_count, visited):
+    """
+    Recursively traverses the dependency graph 
+    to generate all propagation paths for a method.
+
+	:param start: (String) current vertex
+    :param depGraph: (Dict of String: List) dependency graph with callee -> callers relationships
+    :param vertex_list: (List) vertices in current path
+    :param vertex_count: (int) number of vertices in current path
+    :param visited: (Set) visited vertices
+	"""
     vertex_count += 1
     vertex_list[vertex_count] = start
-    # vertex_list.append(start)
     visited[start] = True
     if start not in depGraph.keys():
         printList(vertex_list)
@@ -91,6 +107,12 @@ def findPaths(start, depGraph, vertex_list, vertex_count, visited):
 
 
 def printList(vertex_list):
+    """
+    Prints dependency path and adds current 
+    path length to global var PATH_LENGTH.
+
+	:param vertex_list: (List) vertices in dependency path
+	"""
     global PATH_LENGTH
     output_str = ""
     actual_list = []
@@ -99,53 +121,16 @@ def printList(vertex_list):
             actual_list.append(x)
     PATH_LENGTH.append(len(actual_list))
     print("->".join(actual_list))
-    # if len(vertex_list) > 0:
-    #     print("->".join([str(x) for x in vertex_list if x != 0]))
-    #     PATH_LENGTH.append()
-
-### Function to print a BFS of graph ###
-def BFS(s, depGraph):
-
-    # Mark all the vertices as not visited
-    visited = {}
-    for i in depGraph.keys():
-        visited[i] = False
-
-    # Create a queue for BFS
-    queue = []
-
-    # Mark the source node as
-    # visited and enqueue it
-    queue.append(s)
-    visited[s] = True
-
-    while queue:
-        # Dequeue a vertex from
-        # queue and print it
-        s = queue.pop(0)
-        # print(s, end=" ")
-
-        # Get all adjacent vertices of the
-        # dequeued vertex s.
-        # If an adjacent has not been visited,
-        # then mark it visited and enqueue it
-        if s not in depGraph.keys():
-            continue
-        for i in depGraph[s]:
-            if i not in depGraph.keys():
-                print(" -->", i, end ="")
-                continue
-            if visited[i] == False:
-                queue.append(i)
-                visited[i] = True
-                print(" -->",i, end = "")
 
 
-# thank you candace <3
 def main(dependencies, error_methods):
-    depGraph, all_methods = buildGraph(dependencies)
-    # print("DEPENDENCY GRAPH:", depGraph, "\n")
+    """
+    Builds dependency graph and trace propagation paths.
 
+	:param dependencies: (String) txt filename, contains Java CallGraph output
+    :param error_methods: (String) txt filename, contains JavaParser output
+	"""
+    depGraph, all_methods = buildGraph(dependencies)
     methodTrace(error_methods, depGraph, all_methods)
 
 if __name__ == "__main__":

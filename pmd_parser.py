@@ -1,9 +1,14 @@
 import os
 
-# dir_name = "parser_output"
-
-#TODO: account for no empty try catches
 def parse(input_file, output_dir):
+    """
+    Reads in txt file containing PMD output,
+    identifies lines with empty catch blocks,
+    and writes those line numbers to files.
+
+	:param input_file: (String) txt filename, contains PMD output
+    :param output_dir: (String) path to output directory
+	"""
     file_map = {}
     if not os.path.exists(output_dir):
         os.mkdir(output_dir)
