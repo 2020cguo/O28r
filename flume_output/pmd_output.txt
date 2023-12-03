@@ -1,0 +1,695 @@
+flume/channel/file/CheckpointRebuilder.java:70:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/CheckpointRebuilder.java:209:	SimplifyBooleanReturns:	This if statement can be replaced by `return !{condition} || {elseBranch};`
+flume/channel/file/CheckpointRebuilder.java:239:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/EventQueueBackingStore.java:45:	LooseCoupling:	Avoid using implementation types like 'ImmutableSortedSet'; use the interface instead
+flume/channel/file/EventQueueBackingStoreFactory.java:30:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/channel/file/EventQueueBackingStoreFactory.java:62:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/EventQueueBackingStoreFactory.java:93:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/EventQueueBackingStoreFactory.java:102:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/EventQueueBackingStoreFactory.java:112:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/EventQueueBackingStoreFile.java:95:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/EventQueueBackingStoreFile.java:230:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/EventQueueBackingStoreFile.java:255:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/EventQueueBackingStoreFile.java:299:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/channel/file/EventQueueBackingStoreFile.java:319:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/EventQueueBackingStoreFile.java:325:	EmptyControlStatement:	Empty while statement
+flume/channel/file/EventQueueBackingStoreFile.java:358:	UseCollectionIsEmpty:	Substitute calls to size() == 0 (or size() != 0, size() > 0, size() < 1) with calls to isEmpty()
+flume/channel/file/EventQueueBackingStoreFileV3.java:55:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/EventQueueBackingStoreFileV3.java:59:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/EventQueueBackingStoreFileV3.java:96:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/EventQueueBackingStoreFileV3.java:119:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/EventQueueBackingStoreFileV3.java:160:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/EventQueueBackingStoreFileV3.java:199:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/EventQueueBackingStoreFileV3.java:212:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/EventUtils.java:27:	UseUtilityClass:	This utility class has a non-private constructor
+flume/channel/file/FileChannel.java:91:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/channel/file/FileChannel.java:92:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/channel/file/FileChannel.java:195:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/FileChannel.java:278:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/FileChannel.java:289:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/FileChannel.java:291:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/channel/file/FileChannel.java:295:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/FileChannel.java:296:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/channel/file/FileChannel.java:334:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/FileChannel.java:458:	LooseCoupling:	Avoid using implementation types like 'LinkedBlockingDeque'; use the interface instead
+flume/channel/file/FileChannel.java:459:	LooseCoupling:	Avoid using implementation types like 'LinkedBlockingDeque'; use the interface instead
+flume/channel/file/FileChannel.java:564:	UnnecessaryLocalBeforeReturn:	Consider simply returning the value vs storing it in local variable 'event'
+flume/channel/file/FileChannel.java:611:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/FlumeEvent.java:46:	UseStandardCharsets:	Please use StandardCharsets constants
+flume/channel/file/FlumeEvent.java:56:	UseStandardCharsets:	Please use StandardCharsets constants
+flume/channel/file/FlumeEvent.java:155:	UselessParentheses:	Useless parentheses.
+flume/channel/file/FlumeEvent.java:163:	UselessParentheses:	Useless parentheses.
+flume/channel/file/FlumeEventPointer.java:83:	SimplifyBooleanReturns:	This if statement can be replaced by `return !{condition};`
+flume/channel/file/FlumeEventQueue.java:115:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/FlumeEventQueue.java:281:	AvoidProtectedMethodInFinalClassNotExtending:	Avoid protected methods in a final class that doesnt extend anything other than Object.  Change to private or package access.
+flume/channel/file/FlumeEventQueue.java:297:	AvoidProtectedMethodInFinalClassNotExtending:	Avoid protected methods in a final class that doesnt extend anything other than Object.  Change to private or package access.
+flume/channel/file/FlumeEventQueue.java:342:	AvoidProtectedMethodInFinalClassNotExtending:	Avoid protected methods in a final class that doesnt extend anything other than Object.  Change to private or package access.
+flume/channel/file/FlumeEventQueue.java:381:	AvoidProtectedMethodInFinalClassNotExtending:	Avoid protected methods in a final class that doesnt extend anything other than Object.  Change to private or package access.
+flume/channel/file/FlumeEventQueue.java:444:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/channel/file/FlumeEventQueue.java:445:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/channel/file/FlumeEventQueue.java:446:	AvoidMessageDigestField:	You shouldnt declare field of MessageDigest type, because unsynchronized access could cause problems
+flume/channel/file/FlumeEventQueue.java:448:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/channel/file/FlumeEventQueue.java:529:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/FlumeEventQueue.java:581:	UselessParentheses:	Useless parentheses.
+flume/channel/file/FlumeEventQueue.java:588:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:76:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/channel/file/Log.java:94:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/channel/file/Log.java:96:	SingularField:	Perhaps 'checkpointInterval' could be replaced by a local variable.
+flume/channel/file/Log.java:128:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/channel/file/Log.java:250:	FormalParameterNamingConventions:	The method parameter name 'UseDualCheckpoints' doesn't match '[a-z][a-zA-Z0-9]*'
+flume/channel/file/Log.java:347:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:418:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:435:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:439:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:457:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:484:	PreserveStackTrace:	Thrown exception does not preserve the stack trace of exception 'ex' on all code paths
+flume/channel/file/Log.java:505:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:516:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:517:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/channel/file/Log.java:833:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:857:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:863:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:870:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:990:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:1065:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:1087:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:1091:	UseCollectionIsEmpty:	Substitute calls to size() == 0 (or size() != 0, size() > 0, size() < 1) with calls to isEmpty()
+flume/channel/file/Log.java:1121:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:1128:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:1163:	CloseResource:	Ensure that resources like this FileLock object are closed after use
+flume/channel/file/Log.java:1171:	CloseResource:	Ensure that resources like this FileLock object are closed after use
+flume/channel/file/Log.java:1173:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:1191:	CloseResource:	Ensure that resources like this RandomAccessFile object are closed after use
+flume/channel/file/Log.java:1199:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Log.java:1212:	CloseResource:	Ensure that resources like this FileLock object are closed after use
+flume/channel/file/Log.java:1239:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/channel/file/LogFile.java:136:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:178:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/channel/file/LogFile.java:185:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/channel/file/LogFile.java:203:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:210:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/channel/file/LogFile.java:211:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:220:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:384:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:388:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:393:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:402:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:437:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:447:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:458:	UnusedPrivateField:	Avoid unused private fields such as 'fsyncPerTransaction'.
+flume/channel/file/LogFile.java:459:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/channel/file/LogFile.java:520:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:523:	CloseResource:	Ensure that resources like this RandomAccessFile object are closed after use
+flume/channel/file/LogFile.java:528:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:535:	EmptyCatchBlock:	Avoid empty catch blocks
+flume/channel/file/LogFile.java:560:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:572:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:658:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:660:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:672:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:683:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:686:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:692:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFile.java:717:	EmptyCatchBlock:	Avoid empty catch blocks
+flume/channel/file/LogFileFactory.java:34:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/channel/file/LogFileFactory.java:61:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFileFactory.java:106:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFileFactory.java:182:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFileV2.java:34:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/channel/file/LogFileV2.java:49:	CloseResource:	Ensure that resources like this RandomAccessFile object are closed after use
+flume/channel/file/LogFileV2.java:64:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFileV2.java:83:	CloseResource:	Ensure that resources like this RandomAccessFile object are closed after use
+flume/channel/file/LogFileV2.java:88:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFileV2.java:102:	CloseResource:	Ensure that resources like this RandomAccessFile object are closed after use
+flume/channel/file/LogFileV2.java:138:	CloseResource:	Ensure that resources like this RandomAccessFile object are closed after use
+flume/channel/file/LogFileV3.java:51:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/channel/file/LogFileV3.java:130:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFileV3.java:148:	CloseResource:	Ensure that resources like this FileOutputStream object are closed after use
+flume/channel/file/LogFileV3.java:175:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFileV3.java:223:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/channel/file/LogFileV3.java:224:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/channel/file/LogFileV3.java:225:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/channel/file/LogFileV3.java:226:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/channel/file/LogFileV3.java:227:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/channel/file/LogFileV3.java:265:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFileV3.java:358:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogFileV3.java:380:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/LogRecord.java:46:	PrimitiveWrapperInstantiation:	Do not use `new Long(...)`, prefer `Long.valueOf(...)`
+flume/channel/file/LogRecord.java:50:	PrimitiveWrapperInstantiation:	Do not use `new Long(...)`, prefer `Long.valueOf(...)`
+flume/channel/file/LogUtils.java:29:	UseUtilityClass:	This utility class has a non-private constructor
+flume/channel/file/ReplayHandler.java:53:	LooseCoupling:	Avoid using implementation types like 'PriorityQueue'; use the interface instead
+flume/channel/file/ReplayHandler.java:132:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/ReplayHandler.java:134:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/ReplayHandler.java:183:	UseCollectionIsEmpty:	Substitute calls to size() == 0 (or size() != 0, size() > 0, size() < 1) with calls to isEmpty()
+flume/channel/file/ReplayHandler.java:196:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/ReplayHandler.java:203:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/ReplayHandler.java:234:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/ReplayHandler.java:237:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/ReplayHandler.java:248:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
+flume/channel/file/ReplayHandler.java:249:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/ReplayHandler.java:262:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/ReplayHandler.java:279:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/ReplayHandler.java:297:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/ReplayHandler.java:333:	UseCollectionIsEmpty:	Substitute calls to size() == 0 (or size() != 0, size() > 0, size() < 1) with calls to isEmpty()
+flume/channel/file/ReplayHandler.java:345:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/ReplayHandler.java:373:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/ReplayHandler.java:384:	AssignmentInOperand:	Avoid assignments in operands
+flume/channel/file/Serialization.java:43:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/channel/file/Serialization.java:107:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Serialization.java:112:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Serialization.java:113:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Serialization.java:120:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Serialization.java:161:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Serialization.java:170:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/channel/file/Serialization.java:210:	CloseResource:	Ensure that resources like this FileOutputStream object are closed after use
+flume/channel/file/Serialization.java:228:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Serialization.java:237:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/channel/file/Serialization.java:276:	CloseResource:	Ensure that resources like this FileOutputStream object are closed after use
+flume/channel/file/Serialization.java:293:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/Serialization.java:303:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/channel/file/TransactionEventRecord.java:60:	UncommentedEmptyMethodBody:	Document empty method body
+flume/channel/file/TransactionEventRecord.java:63:	UncommentedEmptyMethodBody:	Document empty method body
+flume/channel/file/TransactionEventRecord.java:84:	UnnecessaryModifier:	Unnecessary modifier 'static' on enum 'Type': nested enums are implicitly static
+flume/channel/file/TransactionEventRecord.java:101:	LooseCoupling:	Avoid using implementation types like 'ImmutableMap'; use the interface instead
+flume/channel/file/Writable.java:38:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'write': the method is declared in an interface type
+flume/channel/file/Writable.java:46:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'readFields': the method is declared in an interface type
+flume/channel/file/WritableUtils.java:27:	UseUtilityClass:	This utility class has a non-private constructor
+flume/channel/file/WritableUtils.java:110:	UselessParentheses:	Useless parentheses.
+flume/channel/file/encryption/AESCTRNoPaddingProvider.java:70:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/channel/file/encryption/AESCTRNoPaddingProvider.java:95:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/channel/file/encryption/AESCTRNoPaddingProvider.java:131:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/channel/file/encryption/CipherProviderFactory.java:30:	UseUtilityClass:	This utility class has a non-private constructor
+flume/channel/file/encryption/CipherProviderFactory.java:78:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/encryption/EncryptionConfiguration.java:21:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/channel/file/encryption/JCEFileKeyProvider.java:111:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/encryption/KeyProvider.java:33:	UnnecessaryModifier:	Unnecessary modifiers 'public abstract' on method 'build': the method is declared in an interface type
+flume/channel/file/encryption/KeyProviderFactory.java:30:	UseUtilityClass:	This utility class has a non-private constructor
+flume/channel/file/encryption/KeyProviderFactory.java:63:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/channel/file/encryption/KeyProviderFactory.java:76:	IdenticalCatchBranches:	'catch' branch identical to 'InstantiationException' branch
+flume/java/org/apache/flume/Channel.java:69:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'put': the method is declared in an interface type
+flume/java/org/apache/flume/Channel.java:83:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'take': the method is declared in an interface type
+flume/java/org/apache/flume/Channel.java:88:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'getTransaction': the method is declared in an interface type
+flume/java/org/apache/flume/ChannelSelector.java:38:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'setChannels': the method is declared in an interface type
+flume/java/org/apache/flume/ChannelSelector.java:48:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'getRequiredChannels': the method is declared in an interface type
+flume/java/org/apache/flume/ChannelSelector.java:58:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'getOptionalChannels': the method is declared in an interface type
+flume/java/org/apache/flume/ChannelSelector.java:64:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'getAllChannels': the method is declared in an interface type
+flume/java/org/apache/flume/CounterGroup.java:32:	LooseCoupling:	Avoid using implementation types like 'HashMap'; use the interface instead
+flume/java/org/apache/flume/CounterGroup.java:85:	LooseCoupling:	Avoid using implementation types like 'HashMap'; use the interface instead
+flume/java/org/apache/flume/CounterGroup.java:89:	LooseCoupling:	Avoid using implementation types like 'HashMap'; use the interface instead
+flume/java/org/apache/flume/NamedComponent.java:32:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'setName': the method is declared in an interface type
+flume/java/org/apache/flume/NamedComponent.java:34:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'getName': the method is declared in an interface type
+flume/java/org/apache/flume/PollableSource.java:48:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'process': the method is declared in an interface type
+flume/java/org/apache/flume/PollableSource.java:50:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'getBackOffSleepIncrement': the method is declared in an interface type
+flume/java/org/apache/flume/PollableSource.java:52:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'getMaxBackOffSleepInterval': the method is declared in an interface type
+flume/java/org/apache/flume/PollableSource.java:54:	UnnecessaryModifier:	Unnecessary modifier 'public' on enum 'Status': the enum is declared in an interface type
+flume/java/org/apache/flume/PollableSource.java:54:	UnnecessaryModifier:	Unnecessary modifier 'static' on enum 'Status': nested enums are implicitly static
+flume/java/org/apache/flume/Sink.java:57:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'setChannel': the method is declared in an interface type
+flume/java/org/apache/flume/Sink.java:62:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'getChannel': the method is declared in an interface type
+flume/java/org/apache/flume/Sink.java:74:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'process': the method is declared in an interface type
+flume/java/org/apache/flume/Sink.java:76:	UnnecessaryModifier:	Unnecessary modifier 'public' on enum 'Status': the enum is declared in an interface type
+flume/java/org/apache/flume/Sink.java:76:	UnnecessaryModifier:	Unnecessary modifier 'static' on enum 'Status': nested enums are implicitly static
+flume/java/org/apache/flume/SinkRunner.java:159:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/Source.java:55:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'setChannelProcessor': the method is declared in an interface type
+flume/java/org/apache/flume/Source.java:60:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'getChannelProcessor': the method is declared in an interface type
+flume/java/org/apache/flume/annotations/InterfaceAudience.java:46:	MissingStaticMethodInNonInstantiatableClass:	Class cannot be instantiated and does not provide any static methods or fields
+flume/java/org/apache/flume/annotations/InterfaceAudience.java:46:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/annotations/InterfaceAudience.java:51:	UnnecessarySemicolon:	Unnecessary semicolon
+flume/java/org/apache/flume/annotations/InterfaceAudience.java:59:	UnnecessarySemicolon:	Unnecessary semicolon
+flume/java/org/apache/flume/annotations/InterfaceAudience.java:65:	UnnecessarySemicolon:	Unnecessary semicolon
+flume/java/org/apache/flume/annotations/InterfaceStability.java:42:	UnnecessarySemicolon:	Unnecessary semicolon
+flume/java/org/apache/flume/annotations/InterfaceStability.java:48:	UnnecessarySemicolon:	Unnecessary semicolon
+flume/java/org/apache/flume/annotations/InterfaceStability.java:55:	UnnecessarySemicolon:	Unnecessary semicolon
+flume/java/org/apache/flume/channel/AbstractChannel.java:68:	UncommentedEmptyMethodBody:	Document empty method body
+flume/java/org/apache/flume/channel/AbstractChannel.java:71:	MissingOverride:	The method 'toString()' is missing an @Override annotation.
+flume/java/org/apache/flume/channel/BasicChannelSemantics.java:55:	UncommentedEmptyMethodBody:	Document empty method body
+flume/java/org/apache/flume/channel/BasicTransactionSemantics.java:66:	UncommentedEmptyMethodBody:	Document empty method body
+flume/java/org/apache/flume/channel/BasicTransactionSemantics.java:72:	UncommentedEmptyMethodBody:	Document empty method body
+flume/java/org/apache/flume/channel/BasicTransactionSemantics.java:217:	UnnecessaryModifier:	Unnecessary modifier 'static' on enum 'State': nested enums are implicitly static
+flume/java/org/apache/flume/channel/ChannelProcessor.java:106:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/channel/ChannelProcessor.java:195:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/channel/ChannelProcessor.java:197:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/channel/ChannelProcessor.java:198:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/channel/ChannelProcessor.java:200:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/channel/ChannelProcessor.java:227:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/channel/ChannelProcessor.java:229:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/channel/ChannelProcessor.java:230:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/channel/ChannelProcessor.java:271:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/channel/ChannelProcessor.java:273:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/channel/ChannelProcessor.java:274:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/channel/ChannelProcessor.java:276:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/channel/ChannelProcessor.java:300:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/channel/ChannelProcessor.java:302:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/channel/ChannelProcessor.java:303:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/channel/ChannelSelectorFactory.java:36:	UseUtilityClass:	This utility class has a non-private constructor
+flume/java/org/apache/flume/channel/ChannelUtils.java:53:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/channel/ChannelUtils.java:185:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/channel/ChannelUtils.java:189:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/channel/ChannelUtils.java:192:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/channel/ChannelUtils.java:194:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/channel/ChannelUtils.java:196:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/channel/ChannelUtils.java:204:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/channel/ChannelUtils.java:206:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/channel/ChannelUtils.java:208:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/channel/LoadBalancingChannelSelector.java:69:	UseLocaleWithCaseConversions:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+flume/java/org/apache/flume/channel/LoadBalancingChannelSelector.java:115:	UncommentedEmptyConstructor:	Document empty constructor
+flume/java/org/apache/flume/channel/LoadBalancingChannelSelector.java:136:	UncommentedEmptyConstructor:	Document empty constructor
+flume/java/org/apache/flume/channel/MemoryChannel.java:65:	LooseCoupling:	Avoid using implementation types like 'LinkedBlockingDeque'; use the interface instead
+flume/java/org/apache/flume/channel/MemoryChannel.java:66:	LooseCoupling:	Avoid using implementation types like 'LinkedBlockingDeque'; use the interface instead
+flume/java/org/apache/flume/channel/MemoryChannel.java:189:	UnnecessaryAnnotationValueElement:	Avoid the use of value in annotations when its the only element
+flume/java/org/apache/flume/channel/MemoryChannel.java:190:	LooseCoupling:	Avoid using implementation types like 'LinkedBlockingDeque'; use the interface instead
+flume/java/org/apache/flume/channel/MemoryChannel.java:204:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/java/org/apache/flume/channel/MemoryChannel.java:205:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/java/org/apache/flume/channel/MemoryChannel.java:206:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/java/org/apache/flume/channel/MemoryChannel.java:207:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/java/org/apache/flume/channel/MemoryChannel.java:208:	SingularField:	Perhaps 'byteCapacityBufferPercentage' could be replaced by a local variable.
+flume/java/org/apache/flume/channel/MemoryChannel.java:208:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/java/org/apache/flume/channel/MemoryChannel.java:212:	UnnecessaryConstructor:	Avoid unnecessary constructors - the compiler will generate these for you
+flume/java/org/apache/flume/channel/MemoryChannel.java:265:	UselessParentheses:	Useless parentheses.
+flume/java/org/apache/flume/channel/MemoryChannel.java:271:	UselessParentheses:	Useless parentheses.
+flume/java/org/apache/flume/channel/MemoryChannel.java:328:	UnnecessaryReturn:	Unnecessary return statement
+flume/java/org/apache/flume/channel/MemoryChannel.java:334:	LooseCoupling:	Avoid using implementation types like 'LinkedBlockingDeque'; use the interface instead
+flume/java/org/apache/flume/channel/MemoryChannel.java:341:	LooseCoupling:	Avoid using implementation types like 'LinkedBlockingDeque'; use the interface instead
+flume/java/org/apache/flume/channel/MultiplexingChannelSelector.java:105:	UseCollectionIsEmpty:	Substitute calls to size() == 0 (or size() != 0, size() > 0, size() < 1) with calls to isEmpty()
+flume/java/org/apache/flume/channel/PseudoTxnMemoryChannel.java:168:	NonThreadSafeSingleton:	Singleton is not thread safe
+flume/java/org/apache/flume/channel/PseudoTxnMemoryChannel.java:176:	UncommentedEmptyMethodBody:	Document empty method body
+flume/java/org/apache/flume/channel/PseudoTxnMemoryChannel.java:180:	UncommentedEmptyMethodBody:	Document empty method body
+flume/java/org/apache/flume/channel/PseudoTxnMemoryChannel.java:184:	UncommentedEmptyMethodBody:	Document empty method body
+flume/java/org/apache/flume/channel/PseudoTxnMemoryChannel.java:188:	UncommentedEmptyMethodBody:	Document empty method body
+flume/java/org/apache/flume/client/avro/AvroCLIClient.java:79:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/client/avro/AvroCLIClient.java:105:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/client/avro/AvroCLIClient.java:111:	UnnecessaryReturn:	Unnecessary return statement
+flume/java/org/apache/flume/client/avro/AvroCLIClient.java:118:	ReturnFromFinallyBlock:	Avoid returning from a finally block
+flume/java/org/apache/flume/client/avro/AvroCLIClient.java:118:	UnnecessaryReturn:	Unnecessary return statement
+flume/java/org/apache/flume/client/avro/AvroCLIClient.java:134:	UselessParentheses:	Useless parentheses.
+flume/java/org/apache/flume/client/avro/EventReader.java:44:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'readEvent': the method is declared in an interface type
+flume/java/org/apache/flume/client/avro/EventReader.java:52:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'readEvents': the method is declared in an interface type
+flume/java/org/apache/flume/client/avro/EventReader.java:57:	MissingOverride:	The method 'close()' is missing an @Override annotation.
+flume/java/org/apache/flume/client/avro/EventReader.java:57:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'close': the method is declared in an interface type
+flume/java/org/apache/flume/client/avro/ReliableEventReader.java:40:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'commit': the method is declared in an interface type
+flume/java/org/apache/flume/client/avro/ReliableSpoolingFileEventReader.java:92:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/client/avro/ReliableSpoolingFileEventReader.java:216:	UseLocaleWithCaseConversions:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+flume/java/org/apache/flume/client/avro/ReliableSpoolingFileEventReader.java:298:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/client/avro/ReliableSpoolingFileEventReader.java:533:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/client/avro/ReliableSpoolingFileEventReader.java:537:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/client/avro/ReliableSpoolingFileEventReader.java:709:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/client/avro/ReliableSpoolingFileEventReader.java:712:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/conf/Configurable.java:48:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'configure': the method is declared in an interface type
+flume/java/org/apache/flume/conf/ConfigurableComponent.java:22:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'configure': the method is declared in an interface type
+flume/java/org/apache/flume/conf/Configurables.java:27:	UseUtilityClass:	This utility class has a non-private constructor
+flume/java/org/apache/flume/event/EventHelper.java:29:	UseUtilityClass:	This utility class has a non-private constructor
+flume/java/org/apache/flume/event/EventHelper.java:46:	EmptyControlStatement:	Empty if statement
+flume/java/org/apache/flume/formatter/output/BucketPath.java:38:	UseUtilityClass:	This utility class has a non-private constructor
+flume/java/org/apache/flume/formatter/output/BucketPath.java:193:	LooseCoupling:	Avoid using implementation types like 'HashMap'; use the interface instead
+flume/java/org/apache/flume/formatter/output/BucketPath.java:194:	LooseCoupling:	Avoid using implementation types like 'HashMap'; use the interface instead
+flume/java/org/apache/flume/formatter/output/BucketPath.java:203:	LooseCoupling:	Avoid using implementation types like 'HashMap'; use the interface instead
+flume/java/org/apache/flume/formatter/output/BucketPath.java:222:	UseLocaleWithCaseConversions:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+flume/java/org/apache/flume/formatter/output/EventFormatter.java:27:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'format': the method is declared in an interface type
+flume/java/org/apache/flume/formatter/output/PathManager.java:31:	UnnecessaryModifier:	Unnecessary modifiers 'public static' on field 'CTX_PREFIX': the field is declared in an interface type
+flume/java/org/apache/flume/formatter/output/PathManager.java:47:	UnnecessaryModifier:	Unnecessary modifier 'public' on interface 'Builder': the interface is declared in an interface type
+flume/java/org/apache/flume/formatter/output/PathManager.java:48:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'build': the method is declared in an interface type
+flume/java/org/apache/flume/formatter/output/PathManagerFactory.java:32:	UseUtilityClass:	This utility class has a non-private constructor
+flume/java/org/apache/flume/formatter/output/PathManagerFactory.java:62:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/formatter/output/PathManagerFactory.java:75:	IdenticalCatchBranches:	'catch' branch identical to 'InstantiationException' branch
+flume/java/org/apache/flume/instrumentation/ChannelCounter.java:116:	UselessParentheses:	Useless parentheses.
+flume/java/org/apache/flume/instrumentation/GangliaServer.java:80:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/java/org/apache/flume/instrumentation/GangliaServer.java:82:	FinalFieldCouldBeStatic:	This final field could be made static
+flume/java/org/apache/flume/instrumentation/GangliaServer.java:83:	FinalFieldCouldBeStatic:	This final field could be made static
+flume/java/org/apache/flume/instrumentation/GangliaServer.java:84:	FinalFieldCouldBeStatic:	This final field could be made static
+flume/java/org/apache/flume/instrumentation/GangliaServer.java:85:	FinalFieldCouldBeStatic:	This final field could be made static
+flume/java/org/apache/flume/instrumentation/GangliaServer.java:99:	MethodNamingConventions:	The instance method name 'xdr_string' doesn't match '[a-z][a-zA-Z0-9]*'
+flume/java/org/apache/flume/instrumentation/GangliaServer.java:112:	UselessParentheses:	Useless parentheses.
+flume/java/org/apache/flume/instrumentation/GangliaServer.java:121:	MethodNamingConventions:	The instance method name 'xdr_int' doesn't match '[a-z][a-zA-Z0-9]*'
+flume/java/org/apache/flume/instrumentation/GangliaServer.java:135:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/instrumentation/GangliaServer.java:224:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/instrumentation/GangliaServer.java:232:	EmptyCatchBlock:	Avoid empty catch blocks
+flume/java/org/apache/flume/instrumentation/GangliaServer.java:245:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/instrumentation/GangliaServer.java:255:	EmptyCatchBlock:	Avoid empty catch blocks
+flume/java/org/apache/flume/instrumentation/GangliaServer.java:308:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/instrumentation/GangliaServer.java:349:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/instrumentation/MonitorService.java:31:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'start': the method is declared in an interface type
+flume/java/org/apache/flume/instrumentation/MonitorService.java:33:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'stop': the method is declared in an interface type
+flume/java/org/apache/flume/instrumentation/MonitoredCounterGroup.java:60:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/java/org/apache/flume/instrumentation/MonitoredCounterGroup.java:95:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/instrumentation/MonitoredCounterGroup.java:111:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/instrumentation/MonitoredCounterGroup.java:115:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/instrumentation/MonitoredCounterGroup.java:119:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/instrumentation/MonitoredCounterGroup.java:123:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/instrumentation/MonitoredCounterGroup.java:149:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/instrumentation/MonitoredCounterGroup.java:155:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/instrumentation/MonitoredCounterGroup.java:161:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/instrumentation/MonitoredCounterGroup.java:177:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/instrumentation/MonitoredCounterGroup.java:269:	UnnecessaryModifier:	Unnecessary modifier 'static' on enum 'Type': nested enums are implicitly static
+flume/java/org/apache/flume/instrumentation/MonitoringType.java:33:	UnnecessaryModifier:	Unnecessary modifier 'private' on constructor 'MonitoringType(Class<? extends MonitorService>)': enum constructors are implicitly private
+flume/java/org/apache/flume/instrumentation/http/HTTPMetricsServer.java:103:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/instrumentation/http/HTTPMetricsServer.java:123:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/instrumentation/http/HTTPMetricsServer.java:131:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/instrumentation/http/PrometheusHTTPMetricsServer.java:73:	UnusedPrivateField:	Avoid unused private fields such as 'requests'.
+flume/java/org/apache/flume/instrumentation/http/PrometheusHTTPMetricsServer.java:137:	ReturnEmptyCollectionRatherThanNull:	Return an empty collection rather than null.
+flume/java/org/apache/flume/instrumentation/http/PrometheusHTTPMetricsServer.java:141:	UnusedPrivateMethod:	Avoid unused private methods such as 'processFlumeMetric(Map<Object, Map<String, MetricFamilySamples>>, List<MetricFamilySamples>, ObjectInstance)'.
+flume/java/org/apache/flume/instrumentation/http/PrometheusHTTPMetricsServer.java:176:	LooseCoupling:	Avoid using implementation types like 'AttributeList'; use the interface instead
+flume/java/org/apache/flume/instrumentation/http/PrometheusHTTPMetricsServer.java:182:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/instrumentation/http/PrometheusHTTPMetricsServer.java:195:	UnusedPrivateMethod:	Avoid unused private methods such as 'processKafkaMetric(Map<Object, Map<String, MetricFamilySamples>>, List<MetricFamilySamples>, ObjectInstance)'.
+flume/java/org/apache/flume/instrumentation/http/PrometheusHTTPMetricsServer.java:205:	LooseCoupling:	Avoid using implementation types like 'TreeMap'; use the interface instead
+flume/java/org/apache/flume/instrumentation/http/PrometheusHTTPMetricsServer.java:240:	LooseCoupling:	Avoid using implementation types like 'AttributeList'; use the interface instead
+flume/java/org/apache/flume/instrumentation/util/JMXPollUtil.java:37:	UseUtilityClass:	This utility class has a non-private constructor
+flume/java/org/apache/flume/instrumentation/util/JMXPollUtil.java:61:	LooseCoupling:	Avoid using implementation types like 'AttributeList'; use the interface instead
+flume/java/org/apache/flume/instrumentation/util/JMXPollUtil.java:68:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/interceptor/HostInterceptor.java:63:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/interceptor/Interceptor.java:33:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'initialize': the method is declared in an interface type
+flume/java/org/apache/flume/interceptor/Interceptor.java:41:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'intercept': the method is declared in an interface type
+flume/java/org/apache/flume/interceptor/Interceptor.java:51:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'intercept': the method is declared in an interface type
+flume/java/org/apache/flume/interceptor/Interceptor.java:56:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'close': the method is declared in an interface type
+flume/java/org/apache/flume/interceptor/Interceptor.java:59:	UnnecessaryModifier:	Unnecessary modifier 'public' on interface 'Builder': the interface is declared in an interface type
+flume/java/org/apache/flume/interceptor/Interceptor.java:60:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'build': the method is declared in an interface type
+flume/java/org/apache/flume/interceptor/InterceptorBuilderFactory.java:29:	UseUtilityClass:	This utility class has a non-private constructor
+flume/java/org/apache/flume/interceptor/RegexExtractorInterceptor.java:100:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/interceptor/RegexExtractorInterceptor.java:230:	UseCollectionIsEmpty:	Substitute calls to size() == 0 (or size() != 0, size() > 0, size() < 1) with calls to isEmpty()
+flume/java/org/apache/flume/interceptor/RegexFilteringInterceptor.java:72:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/interceptor/RegexFilteringInterceptor.java:159:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/interceptor/RemoveHeaderInterceptor.java:54:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/interceptor/RemoveHeaderInterceptor.java:139:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/interceptor/SearchAndReplaceInterceptor.java:49:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/interceptor/SearchAndReplaceInterceptor.java:51:	UnusedPrivateField:	Avoid unused private fields such as 'logger'.
+flume/java/org/apache/flume/interceptor/SearchAndReplaceInterceptor.java:67:	UncommentedEmptyMethodBody:	Document empty method body
+flume/java/org/apache/flume/interceptor/SearchAndReplaceInterceptor.java:71:	UncommentedEmptyMethodBody:	Document empty method body
+flume/java/org/apache/flume/interceptor/StaticInterceptor.java:56:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/interceptor/StaticInterceptor.java:130:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/interceptor/TimestampInterceptor.java:36:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/interceptor/TimestampInterceptor.java:60:	EmptyControlStatement:	Empty if statement
+flume/java/org/apache/flume/lifecycle/LifecycleAware.java:100:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'start': the method is declared in an interface type
+flume/java/org/apache/flume/lifecycle/LifecycleAware.java:114:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'stop': the method is declared in an interface type
+flume/java/org/apache/flume/lifecycle/LifecycleAware.java:121:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'getLifecycleState': the method is declared in an interface type
+flume/java/org/apache/flume/lifecycle/LifecycleController.java:27:	UseUtilityClass:	This utility class has a non-private constructor
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:67:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:78:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:241:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:250:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:251:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:253:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:261:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:268:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:268:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:269:	PreserveStackTrace:	Thrown exception does not preserve the stack trace of exception 'e' on all code paths
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:281:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:282:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:284:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:291:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:296:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:302:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:309:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:327:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/java/org/apache/flume/lifecycle/LifecycleSupervisor.java:361:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/netty/filter/PatternRule.java:60:	AvoidUsingHardCodedIP:	Do not hard code the IP address LOCALHOST
+flume/java/org/apache/flume/netty/filter/PatternRule.java:125:	SimplifyBooleanReturns:	This if statement can be replaced by `return {condition} && {thenBranch};`
+flume/java/org/apache/flume/serialization/AbstractAvroEventSerializer.java:37:	UnnecessaryImport:	Unused static import 'org.apache.flume.serialization.AvroEventSerializerConfigurationConstants.*'
+flume/java/org/apache/flume/serialization/AbstractAvroEventSerializer.java:50:	SingularField:	Perhaps 'writer' could be replaced by a local variable.
+flume/java/org/apache/flume/serialization/AbstractAvroEventSerializer.java:88:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/serialization/AvroEventDeserializer.java:51:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/serialization/AvroEventDeserializer.java:59:	SingularField:	Perhaps 'schemaHash' could be replaced by a local variable.
+flume/java/org/apache/flume/serialization/AvroEventDeserializer.java:68:	UnnecessaryModifier:	Unnecessary modifier 'static' on enum 'AvroSchemaType': nested enums are implicitly static
+flume/java/org/apache/flume/serialization/AvroEventDeserializer.java:86:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/serialization/AvroEventDeserializer.java:145:	ControlStatementBraces:	This statement should have braces
+flume/java/org/apache/flume/serialization/BodyTextEventSerializer.java:32:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/serialization/BodyTextEventSerializer.java:34:	UnusedPrivateField:	Avoid unused private fields such as 'logger'.
+flume/java/org/apache/flume/serialization/BodyTextEventSerializer.java:37:	FinalFieldCouldBeStatic:	This final field could be made static
+flume/java/org/apache/flume/serialization/BodyTextEventSerializer.java:38:	FinalFieldCouldBeStatic:	This final field could be made static
+flume/java/org/apache/flume/serialization/BodyTextEventSerializer.java:85:	UnnecessaryLocalBeforeReturn:	Consider simply returning the value vs storing it in local variable 's'
+flume/java/org/apache/flume/serialization/DurablePositionTracker.java:68:	SingletonClassReturningNewInstance:	getInstance method always creates a new object and hence does not comply to Singleton Design Pattern behaviour. Please review
+flume/java/org/apache/flume/serialization/DurablePositionTracker.java:108:	UnnecessaryLocalBeforeReturn:	Consider simply returning the value vs storing it in local variable 'newTracker'
+flume/java/org/apache/flume/serialization/DurablePositionTracker.java:167:	ControlStatementBraces:	This statement should have braces
+flume/java/org/apache/flume/serialization/EventDeserializer.java:44:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'readEvent': the method is declared in an interface type
+flume/java/org/apache/flume/serialization/EventDeserializer.java:54:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'readEvents': the method is declared in an interface type
+flume/java/org/apache/flume/serialization/EventDeserializer.java:63:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'mark': the method is declared in an interface type
+flume/java/org/apache/flume/serialization/EventDeserializer.java:73:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'reset': the method is declared in an interface type
+flume/java/org/apache/flume/serialization/EventDeserializer.java:84:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'close': the method is declared in an interface type
+flume/java/org/apache/flume/serialization/EventDeserializer.java:90:	UnnecessaryModifier:	Unnecessary modifier 'public' on interface 'Builder': the interface is declared in an interface type
+flume/java/org/apache/flume/serialization/EventDeserializer.java:91:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'build': the method is declared in an interface type
+flume/java/org/apache/flume/serialization/EventDeserializerFactory.java:33:	UseUtilityClass:	This utility class has a non-private constructor
+flume/java/org/apache/flume/serialization/EventDeserializerFactory.java:68:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/serialization/EventDeserializerFactory.java:81:	IdenticalCatchBranches:	'catch' branch identical to 'InstantiationException' branch
+flume/java/org/apache/flume/serialization/EventSerDe.java:45:	UnnecessaryModifier:	Unnecessary modifier 'public' on interface 'Builder': the interface is declared in an interface type
+flume/java/org/apache/flume/serialization/EventSerDe.java:46:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'build': the method is declared in an interface type
+flume/java/org/apache/flume/serialization/EventSerializer.java:85:	UnnecessaryModifier:	Unnecessary modifiers 'public static' on field 'CTX_PREFIX': the field is declared in an interface type
+flume/java/org/apache/flume/serialization/EventSerializer.java:90:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'afterCreate': the method is declared in an interface type
+flume/java/org/apache/flume/serialization/EventSerializer.java:96:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'afterReopen': the method is declared in an interface type
+flume/java/org/apache/flume/serialization/EventSerializer.java:103:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'write': the method is declared in an interface type
+flume/java/org/apache/flume/serialization/EventSerializer.java:111:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'flush': the method is declared in an interface type
+flume/java/org/apache/flume/serialization/EventSerializer.java:118:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'beforeClose': the method is declared in an interface type
+flume/java/org/apache/flume/serialization/EventSerializer.java:127:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'supportsReopen': the method is declared in an interface type
+flume/java/org/apache/flume/serialization/EventSerializer.java:133:	UnnecessaryModifier:	Unnecessary modifier 'public' on interface 'Builder': the interface is declared in an interface type
+flume/java/org/apache/flume/serialization/EventSerializer.java:134:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'build': the method is declared in an interface type
+flume/java/org/apache/flume/serialization/EventSerializerFactory.java:34:	UseUtilityClass:	This utility class has a non-private constructor
+flume/java/org/apache/flume/serialization/EventSerializerFactory.java:69:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/serialization/EventSerializerFactory.java:82:	IdenticalCatchBranches:	'catch' branch identical to 'InstantiationException' branch
+flume/java/org/apache/flume/serialization/FlumeEventAvroEventSerializer.java:26:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/serialization/HeaderAndBodyTextEventSerializer.java:32:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/serialization/HeaderAndBodyTextEventSerializer.java:34:	UnusedPrivateField:	Avoid unused private fields such as 'logger'.
+flume/java/org/apache/flume/serialization/HeaderAndBodyTextEventSerializer.java:38:	FinalFieldCouldBeStatic:	This final field could be made static
+flume/java/org/apache/flume/serialization/HeaderAndBodyTextEventSerializer.java:39:	FinalFieldCouldBeStatic:	This final field could be made static
+flume/java/org/apache/flume/serialization/HeaderAndBodyTextEventSerializer.java:87:	UnnecessaryLocalBeforeReturn:	Consider simply returning the value vs storing it in local variable 's'
+flume/java/org/apache/flume/serialization/LineDeserializer.java:46:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/java/org/apache/flume/serialization/PositionTracker.java:35:	MissingOverride:	The method 'close()' is missing an @Override annotation.
+flume/java/org/apache/flume/serialization/ResettableFileInputStream.java:317:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/serialization/ResettableFileInputStream.java:380:	ControlStatementBraces:	This statement should have braces
+flume/java/org/apache/flume/sink/AbstractRpcSink.java:154:	FinalFieldCouldBeStatic:	This final field could be made static
+flume/java/org/apache/flume/sink/AbstractRpcSink.java:190:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/AbstractRpcSink.java:231:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/sink/AbstractRpcSink.java:237:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/AbstractRpcSink.java:246:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/sink/AbstractRpcSink.java:254:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/AbstractRpcSink.java:260:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/AbstractRpcSink.java:294:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/AbstractRpcSink.java:299:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/AbstractRpcSink.java:308:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/AbstractRpcSink.java:313:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/AbstractRpcSink.java:327:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/AbstractRpcSink.java:386:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/sink/AbstractRpcSink.java:388:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/sink/AbstractRpcSink.java:390:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/sink/AbstractRpcSink.java:391:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/DefaultSinkProcessor.java:34:	UncommentedEmptyMethodBody:	Document empty method body
+flume/java/org/apache/flume/sink/DefaultSinkProcessor.java:43:	UncommentedEmptyMethodBody:	Document empty method body
+flume/java/org/apache/flume/sink/FailoverSinkProcessor.java:101:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/FailoverSinkProcessor.java:133:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/FailoverSinkProcessor.java:169:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/FailoverSinkProcessor.java:188:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/FailoverSinkProcessor.java:202:	ControlStatementBraces:	This statement should have braces
+flume/java/org/apache/flume/sink/LoadBalancingSinkProcessor.java:110:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/sink/LoadBalancingSinkProcessor.java:112:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/sink/LoadBalancingSinkProcessor.java:131:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/LoggerSink.java:74:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/NullSink.java:69:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/NullSink.java:74:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/NullSink.java:93:	AssignmentInOperand:	Avoid assignments in operands
+flume/java/org/apache/flume/sink/NullSink.java:94:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/NullSink.java:118:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/NullSink.java:123:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/NullSink.java:128:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/NullSink.java:132:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/RollingFileSink.java:68:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/java/org/apache/flume/sink/RollingFileSink.java:111:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/RollingFileSink.java:134:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/RollingFileSink.java:143:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/RollingFileSink.java:149:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/RollingFileSink.java:152:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/RollingFileSink.java:236:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/RollingFileSink.java:241:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/RollingFileSink.java:268:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/sink/SinkProcessorFactory.java:36:	UseUtilityClass:	This utility class has a non-private constructor
+flume/java/org/apache/flume/source/AbstractEventDrivenSource.java:35:	UnnecessaryConstructor:	Avoid unnecessary constructors - the compiler will generate these for you
+flume/java/org/apache/flume/source/AbstractPollableSource.java:46:	UnnecessaryConstructor:	Avoid unnecessary constructors - the compiler will generate these for you
+flume/java/org/apache/flume/source/AbstractSource.java:81:	MissingOverride:	The method 'toString()' is missing an @Override annotation.
+flume/java/org/apache/flume/source/AvroSource.java:139:	UnusedPrivateField:	Avoid unused private fields such as 'maxThreads'.
+flume/java/org/apache/flume/source/AvroSource.java:156:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/AvroSource.java:184:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/AvroSource.java:188:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/source/AvroSource.java:201:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/AvroSource.java:204:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/AvroSource.java:209:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/AvroSource.java:223:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/AvroSource.java:228:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/AvroSource.java:236:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/AvroSource.java:249:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/AvroSource.java:273:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/AvroSource.java:275:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/AvroSource.java:288:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/AvroSource.java:302:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/AvroSource.java:318:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/source/AvroSource.java:319:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/AvroSource.java:322:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/source/AvroSource.java:346:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/source/AvroSource.java:346:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/source/AvroSource.java:356:	UselessParentheses:	Useless parentheses.
+flume/java/org/apache/flume/source/AvroSource.java:356:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/source/AvroSource.java:356:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/source/AvroSource.java:363:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/source/AvroSource.java:364:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/source/BasicSourceSemantics.java:77:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/BasicSourceSemantics.java:86:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/BasicSourceSemantics.java:99:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/BasicSourceSemantics.java:128:	MissingOverride:	The method 'toString()' is missing an @Override annotation.
+flume/java/org/apache/flume/source/ExecSource.java:279:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/java/org/apache/flume/source/ExecSource.java:332:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/source/ExecSource.java:356:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/ExecSource.java:357:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/source/ExecSource.java:379:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/ExecSource.java:461:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/MultiportSyslogTCPSource.java:77:	SingularField:	Perhaps 'defaultCharset' could be replaced by a local variable.
+flume/java/org/apache/flume/source/MultiportSyslogTCPSource.java:170:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/MultiportSyslogTCPSource.java:207:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/MultiportSyslogTCPSource.java:214:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/MultiportSyslogTCPSource.java:219:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/MultiportSyslogTCPSource.java:227:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/MultiportSyslogTCPSource.java:366:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/source/MultiportSyslogTCPSource.java:369:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/source/MultiportSyslogTCPSource.java:387:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/source/MultiportSyslogTCPSource.java:388:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/MultiportSyslogTCPSource.java:392:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/source/NetcatSource.java:275:	CloseResource:	Ensure that resources like this SocketChannel object are closed after use
+flume/java/org/apache/flume/source/NetcatSource.java:288:	EmptyCatchBlock:	Avoid empty catch blocks
+flume/java/org/apache/flume/source/NetcatSource.java:317:	UnusedLocalVariable:	Avoid unused local variables such as 'event'.
+flume/java/org/apache/flume/source/NetcatSource.java:320:	CloseResource:	Ensure that resources like this Reader object are closed after use
+flume/java/org/apache/flume/source/NetcatSource.java:321:	CloseResource:	Ensure that resources like this Writer object are closed after use
+flume/java/org/apache/flume/source/PollableSourceRunner.java:150:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/SequenceGeneratorSource.java:96:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/SequenceGeneratorSource.java:116:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/SpoolDirectorySource.java:46:	UnnecessaryImport:	Unused static import 'org.apache.flume.source.SpoolDirectorySourceConfigurationConstants.*'
+flume/java/org/apache/flume/source/SpoolDirectorySource.java:69:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/java/org/apache/flume/source/SpoolDirectorySource.java:138:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/SpoolDirectorySource.java:275:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/SpoolDirectorySource.java:283:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/SpoolDirectorySource.java:295:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/source/SpoolDirectorySource.java:296:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/StressSource.java:64:	SingularField:	Perhaps 'buffer' could be replaced by a local variable.
+flume/java/org/apache/flume/source/StressSource.java:71:	SingularField:	Perhaps 'eventBatchListToProcess' could be replaced by a local variable.
+flume/java/org/apache/flume/source/SyslogParser.java:187:	UnnecessaryLocalBeforeReturn:	Consider simply returning the value vs storing it in local variable 'event'
+flume/java/org/apache/flume/source/SyslogParser.java:243:	UselessParentheses:	Useless parentheses.
+flume/java/org/apache/flume/source/SyslogParser.java:245:	UselessParentheses:	Useless parentheses.
+flume/java/org/apache/flume/source/SyslogParser.java:260:	EmptyControlStatement:	Empty if statement
+flume/java/org/apache/flume/source/SyslogParser.java:315:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/SyslogUtils.java:89:	AvoidStringBufferField:	StringBuffers can grow quite a lot, and so may become a source of memory leak (if the owning class has a long life time).
+flume/java/org/apache/flume/source/SyslogUtils.java:108:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/source/SyslogUtils.java:110:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
+flume/java/org/apache/flume/source/SyslogUtils.java:111:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
+flume/java/org/apache/flume/source/SyslogUtils.java:112:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
+flume/java/org/apache/flume/source/SyslogUtils.java:116:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
+flume/java/org/apache/flume/source/SyslogUtils.java:133:	SimplifyBooleanReturns:	This if statement can be replaced by `return !{condition} || {elseBranch};`
+flume/java/org/apache/flume/source/SyslogUtils.java:141:	ReturnEmptyCollectionRatherThanNull:	Return an empty collection rather than null.
+flume/java/org/apache/flume/source/SyslogUtils.java:146:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/source/SyslogUtils.java:146:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/source/SyslogUtils.java:147:	ReturnEmptyCollectionRatherThanNull:	Return an empty collection rather than null.
+flume/java/org/apache/flume/source/SyslogUtils.java:150:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/source/SyslogUtils.java:150:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/source/SyslogUtils.java:383:	ForLoopCanBeForeach:	This for loop can be replaced by a foreach loop
+flume/java/org/apache/flume/source/SyslogUtils.java:406:	ForLoopCanBeForeach:	This for loop can be replaced by a foreach loop
+flume/java/org/apache/flume/source/SyslogUtils.java:471:	AvoidBranchingStatementAsLastInLoop:	Avoid using a branching statement as the last in a loop.
+flume/java/org/apache/flume/source/ThriftSource.java:128:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/ThriftSource.java:142:	UselessParentheses:	Useless parentheses.
+flume/java/org/apache/flume/source/ThriftSource.java:142:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/source/ThriftSource.java:143:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/source/ThriftSource.java:221:	CloseResource:	Ensure that resources like this ServerSocket object are closed after use
+flume/java/org/apache/flume/source/ThriftSource.java:223:	CloseResource:	Ensure that resources like this SSLServerSocket object are closed after use
+flume/java/org/apache/flume/source/ThriftSource.java:229:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/source/ThriftSource.java:237:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/source/ThriftSource.java:243:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/source/ThriftSource.java:295:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/java/org/apache/flume/source/ThriftSource.java:360:	PreserveStackTrace:	Thrown exception does not preserve the stack trace of exception 'e' on all code paths
+flume/java/org/apache/flume/source/ThriftSource.java:368:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/source/ThriftSource.java:380:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/ThriftSource.java:403:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/http/BLOBHandler.java:48:	SingularField:	Perhaps 'commaSeparatedHeaders' could be replaced by a local variable.
+flume/java/org/apache/flume/source/http/BLOBHandler.java:85:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/http/HTTPSource.java:95:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/java/org/apache/flume/source/http/HTTPSource.java:96:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/java/org/apache/flume/source/http/HTTPSource.java:97:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/java/org/apache/flume/source/http/HTTPSource.java:221:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/source/http/HTTPSource.java:224:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/source/http/HTTPSourceConfigurationConstants.java:33:	AvoidUsingHardCodedIP:	Do not hard code the IP address DEFAULT_BIND
+flume/java/org/apache/flume/source/http/HTTPSourceHandler.java:42:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'getEvents': the method is declared in an interface type
+flume/java/org/apache/flume/source/http/JSONHandler.java:90:	CloseResource:	Ensure that resources like this BufferedReader object are closed after use
+flume/java/org/apache/flume/source/http/JSONHandler.java:97:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/source/http/JSONHandler.java:98:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/source/http/JSONHandler.java:99:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/java/org/apache/flume/source/http/JSONHandler.java:125:	UncommentedEmptyMethodBody:	Document empty method body
+flume/java/org/apache/flume/source/shaded/guava/RateLimiter.java:186:	AvoidUsingVolatile:	Use of modifier volatile is not recommended.
+flume/java/org/apache/flume/tools/DirectMemoryUtils.java:35:	UseUtilityClass:	This utility class has a non-private constructor
+flume/java/org/apache/flume/tools/DirectMemoryUtils.java:48:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/tools/DirectMemoryUtils.java:52:	UselessParentheses:	Useless parentheses.
+flume/java/org/apache/flume/tools/DirectMemoryUtils.java:58:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/tools/DirectMemoryUtils.java:67:	AvoidAccessibilityAlteration:	You should not modify visibility of constructors, methods or fields using setAccessible()
+flume/java/org/apache/flume/tools/DirectMemoryUtils.java:70:	AvoidAccessibilityAlteration:	You should not modify visibility of constructors, methods or fields using setAccessible()
+flume/java/org/apache/flume/tools/DirectMemoryUtils.java:74:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/tools/DirectMemoryUtils.java:77:	UselessParentheses:	Useless parentheses.
+flume/java/org/apache/flume/tools/DirectMemoryUtils.java:81:	LocalVariableNamingConventions:	The local variable name 'RuntimemxBean' doesn't match '[a-z][a-zA-Z0-9]*'
+flume/java/org/apache/flume/tools/DirectMemoryUtils.java:105:	LocalVariableNamingConventions:	The local variable name 'VM' doesn't match '[a-z][a-zA-Z0-9]*'
+flume/java/org/apache/flume/tools/DirectMemoryUtils.java:108:	SimplifyConditional:	No need to check for null before an instanceof
+flume/java/org/apache/flume/tools/DirectMemoryUtils.java:112:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/java/org/apache/flume/tools/FlumeBeanConfigurator.java:36:	UseUtilityClass:	This utility class has a non-private constructor
+flume/java/org/apache/flume/tools/FlumeBeanConfigurator.java:60:	UnnecessarySemicolon:	Unnecessary semicolon
+flume/java/org/apache/flume/tools/FlumeBeanConfigurator.java:88:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/java/org/apache/flume/tools/GetJavaProperty.java:23:	UseUtilityClass:	This utility class has a non-private constructor
+flume/java/org/apache/flume/tools/HTTPServerConstraintUtil.java:31:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	This class has only private constructors and may be final
+flume/java/org/apache/flume/tools/PlatformDetect.java:25:	UseUtilityClass:	This utility class has a non-private constructor
+flume/java/org/apache/flume/tools/PlatformDetect.java:33:	UnnecessaryLocalBeforeReturn:	Consider simply returning the value vs storing it in local variable 'isWin'
+flume/java/org/apache/flume/tools/PlatformDetect.java:33:	UselessParentheses:	Useless parentheses.
+flume/java/org/apache/flume/tools/TimestampRoundDownUtil.java:30:	UseUtilityClass:	This utility class has a non-private constructor
+flume/java/org/apache/flume/tools/TimestampRoundDownUtil.java:151:	UselessParentheses:	Useless parentheses.
+flume/java/org/apache/flume/tools/VersionInfo.java:26:	UseUtilityClass:	This utility class has a non-private constructor
+flume/java/org/apache/flume/tools/VersionInfo.java:109:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'VersionInfo': 'getVersion' is already in scope
+flume/java/org/apache/flume/tools/VersionInfo.java:110:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'VersionInfo': 'getRevision' is already in scope
+flume/java/org/apache/flume/tools/VersionInfo.java:111:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'VersionInfo': 'getUser' is already in scope
+flume/java/org/apache/flume/tools/VersionInfo.java:112:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'VersionInfo': 'getDate' is already in scope
+flume/java/org/apache/flume/tools/VersionInfo.java:113:	UnnecessaryFullyQualifiedName:	Unnecessary qualifier 'VersionInfo': 'getSrcChecksum' is already in scope
+flume/node/AbstractConfigurationProvider.java:114:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/AbstractConfigurationProvider.java:123:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/AbstractConfigurationProvider.java:142:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/AbstractConfigurationProvider.java:188:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/AbstractConfigurationProvider.java:208:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/Application.java:116:	UnnecessaryReturn:	Unnecessary return statement
+flume/node/Application.java:140:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/Application.java:144:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/Application.java:147:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/Application.java:154:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/Application.java:157:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/Application.java:164:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/Application.java:167:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/Application.java:214:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/Application.java:218:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/Application.java:229:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/Application.java:241:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/Application.java:245:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/Application.java:252:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/Application.java:256:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/Application.java:458:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/ConfigurationSource.java:26:	UnnecessaryModifier:	Unnecessary modifiers 'static final' on field 'PROPERTIES': the field is declared in an interface type
+flume/node/ConfigurationSource.java:27:	UnnecessaryModifier:	Unnecessary modifiers 'static final' on field 'JSON': the field is declared in an interface type
+flume/node/ConfigurationSource.java:28:	UnnecessaryModifier:	Unnecessary modifiers 'static final' on field 'YAML': the field is declared in an interface type
+flume/node/ConfigurationSource.java:29:	UnnecessaryModifier:	Unnecessary modifiers 'static final' on field 'XML': the field is declared in an interface type
+flume/node/FileConfigurationSource.java:51:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/FileConfigurationSource.java:77:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/FileConfigurationSource.java:84:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/FileConfigurationSource.java:98:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+flume/node/FileConfigurationSourceFactory.java:31:	UnnecessaryAnnotationValueElement:	Avoid the use of value in annotations when its the only element
+flume/node/HttpConfigurationSource.java:91:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/HttpConfigurationSource.java:111:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/HttpConfigurationSource.java:116:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/HttpConfigurationSource.java:118:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/HttpConfigurationSource.java:142:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/HttpConfigurationSourceFactory.java:31:	UnnecessaryAnnotationValueElement:	Avoid the use of value in annotations when its the only element
+flume/node/MapResolver.java:42:	UseUtilityClass:	This utility class has a non-private constructor
+flume/node/MapResolver.java:100:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/MapResolver.java:148:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/MapResolver.java:152:	UseCollectionIsEmpty:	Substitute calls to size() == 0 (or size() != 0, size() > 0, size() < 1) with calls to isEmpty()
+flume/node/MapResolver.java:157:	ReturnEmptyCollectionRatherThanNull:	Return an empty collection rather than null.
+flume/node/MapResolver.java:160:	ReturnEmptyCollectionRatherThanNull:	Return an empty collection rather than null.
+flume/node/PollingZooKeeperConfigurationProvider.java:87:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+flume/node/UriConfigurationProvider.java:261:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/UriConfigurationProvider.java:272:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/UriConfigurationProvider.java:275:	UseCollectionIsEmpty:	Substitute calls to size() == 0 (or size() != 0, size() > 0, size() < 1) with calls to isEmpty()
+flume/node/UriConfigurationProvider.java:285:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/UriConfigurationProvider.java:291:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/UriConfigurationProvider.java:304:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/UriConfigurationProvider.java:353:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+flume/node/net/UrlConnectionFactory.java:32:	UseUtilityClass:	This utility class has a non-private constructor
+flume/node/net/UrlConnectionFactory.java:81:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+flume/node/net/UrlConnectionFactory.java:81:	LiteralsFirstInComparisons:	Position literals first in String comparisons
