@@ -1,5 +1,4 @@
 target/
-bin/
 output_files/
 .project
 .classpath

@@ -1,0 +1,26 @@
+REVERSE PROPAGATION PATH FOR AcceptHandler:run
+AcceptHandler:run
+Number of paths: 1
+Longest path: 1
+
+REVERSE PROPAGATION PATH FOR RandomReader:close
+RandomReader:close
+Number of paths: 1
+Longest path: 1
+
+REVERSE PROPAGATION PATH FOR SequentialReader:close
+SequentialReader:close
+Number of paths: 1
+Longest path: 1
+
+REVERSE PROPAGATION PATH FOR GangliaServer:createGangliaMessage
+GangliaServer:createGangliaMessage->GangliaServer$GangliaCollector:run
+Number of paths: 1
+Longest path: 2
+
+REVERSE PROPAGATION PATH FOR GangliaServer:createGangliaMessage31
+GangliaServer:createGangliaMessage31->GangliaServer$GangliaCollector:run
+Number of paths: 1
+Longest path: 2
+
+[50.0, 50.0, 50.0, 100.0, 100.0]
