@@ -15,7 +15,6 @@ pmd-core/dependency-reduced-pom.xml
 .bundle
 vendor
 .DS_Store
-*.jar
 __pycache__
 
 # node modules for https://allcontributors.org/docs/en/cli/installation
