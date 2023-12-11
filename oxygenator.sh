@@ -2,11 +2,11 @@
 
 ### PATHS ###
 # parent directory of all source code, relative to O28r
-SOURCE_DIR="flume/"
+SOURCE_DIR="zookeeper/"
 # parent directory of output files, relative to O28r
-OUTPUT_DIR="flume_output"
+OUTPUT_DIR="zookeeper_output"
 # parent directory containing jar files, relative to java-callgraph
-JAR_FILE_DIR="flume_lib/"
+JAR_FILE_DIR="zookeeper_lib/"
 
 ### CALL AND PARSE PMD ###
 ./pmd-bin-7.0.0-SNAPSHOT/bin/pmd check -d $SOURCE_DIR --rulesets rulesets/java/quickstart.xml > $OUTPUT_DIR/pmd_output.txt
